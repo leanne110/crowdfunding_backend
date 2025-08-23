@@ -3,9 +3,10 @@ from .models import CustomUser
 
 
 class CustomUserSerializer(serializers.ModelSerializer):
+    user = serializers.ReadOnlyField(source='id')  # Assuming username is a field in CustomUser
     class Meta:
         model = CustomUser
-        field = '__all__'
+        fields = '__all__'
         extra_kwargs = {'password':{'write_only': True}}
 
     def create(self, validated_data):

@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from django.http import Http404
 from .models import Fundraiser, Pledge
-from .serializers import FundraiserSerializer, PledgeSerializer, FundraiserDetailSerializer
+from .serializers import FundraiserSerializer, PledgeSerializer
 
 class FundraiserList(APIView):
 
@@ -15,7 +15,7 @@ class FundraiserList(APIView):
    def post(self, request):
        serializer = FundraiserSerializer(data=request.data)
        if serializer.is_valid():
-           serializer.save()
+           serializer.save(owner=request.user)  # Assuming the owner is the current user
            return Response(
                serializer.data,
                status=status.HTTP_201_CREATED
@@ -47,7 +47,7 @@ class PledgeList(APIView):
     def post(self, request):
         serializer = PledgeSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
+            serializer.save(supporter=request.user)  # Assuming the supporter is the current user
             return Response(
                 serializer.data,
                 status=status.HTTP_201_CREATED
