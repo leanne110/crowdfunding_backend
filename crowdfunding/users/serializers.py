@@ -3,7 +3,7 @@ from .models import CustomUser
 
 
 class CustomUserSerializer(serializers.ModelSerializer):
-    user = serializers.ReadOnlyField(source='id')  # Assuming username is a field in CustomUser
+    # user = serializers.ReadOnlyField(source='id')  # Assuming username is a field in CustomUser
     class Meta:
         model = CustomUser
         fields = '__all__'
