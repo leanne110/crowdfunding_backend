@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.apps import apps
-from .models import Fundraiser
+# from .models import Fundraiser
  
 class FundraiserSerializer(serializers.ModelSerializer):
    owner = serializers.ReadOnlyField(source='owner.id')  # Assuming owner is a ForeignKey to CustomUser
