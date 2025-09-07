@@ -112,4 +112,4 @@ JSON example for update existing pledge
 
 ### DB Schema
 
-![](./datebase.drawio.svg)
+![](./database.drawio.svg)
