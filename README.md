@@ -113,3 +113,14 @@ JSON example for update existing pledge
 ### DB Schema
 
 ![](./database.drawio.svg)
+
+### Screenshot of API Call
+
+get user token
+![get user token ](./static/screenshot/api-token-auth.png)
+
+create a new fundraiser - POST
+![create fundraiser](./static/screenshot/fundraiser.png)
+
+get all pledges - GET
+![get all pledges ](./static/screenshot/get-pledges.png)
