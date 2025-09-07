@@ -6,7 +6,7 @@ Leanne Huang
 
 ### Concept/Name
 
-{{ Treasure bowl is an online platform where individuals, groups, or organizations can raise money for personal needs, creative projects, startups, or charitable causes by collecting small contributions from a large number of people. It typically lets campaign creators set a fundraising goal, share their story, add images, and accept secure online donations }}
+Treasure bowl is an online platform where individuals, groups, or organizations can raise money for personal needs, creative projects, startups, or charitable causes by collecting small contributions from a large number of people. It typically lets campaign creators set a fundraising goal, share their story, add images, and accept secure online donations.
 
 ### Intended Audience/User Stories
 
@@ -75,6 +75,8 @@ copy and past follow JSON string to the request body , and replace the owner id 
 }`
 
 then send request and if it's successful, it will return the new fundraiser you just created.
+
+![fundraiser ](./static/screenshot/fundraiser.png)
 
 <!-- ### Front End Pages/Functionality
 
