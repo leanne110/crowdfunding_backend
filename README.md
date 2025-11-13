@@ -125,13 +125,12 @@ JSON example for obtain token with user details
 
 #### Fundraisers endpoint
 
-| URL               | HTTP Method                   | Purpose | Request Body | Success Response Code | Authentication/Authorisation |
-| ----------------- | ----------------------------- | ------- | ------------ | --------------------- | ---------------------------- |
-| /fundraisers      | Fetch all the fundraisers     | GET     | N/A          | 200                   | None                         |
-| /fundraisers/{id} | Fetch individual fundraiser   | GET     | N/A          | 200                   | None                         |
-| /fundraisers/{id} | Update individual fundraiser  | PUT     | N/A          | 200                   | None                         |
-| /fundraisers      | Create a new fundraisers      | POST    | JSON PayLoad | 200                   | Any logged in user           |
-| /fundraisers      | Update a existing fundraisers | PUT     | JSON PayLoad | 200                   | Any logged in user           |
+| URL               | HTTP Method                  | Purpose | Request Body | Success Response Code | Authentication/Authorisation |
+| ----------------- | ---------------------------- | ------- | ------------ | --------------------- | ---------------------------- |
+| /fundraisers      | Fetch all the fundraisers    | GET     | N/A          | 200                   | None                         |
+| /fundraisers/{id} | Fetch individual fundraiser  | GET     | N/A          | 200                   | None                         |
+| /fundraisers/{id} | Update individual fundraiser | PUT     | N/A          | 200                   | None                         |
+| /fundraisers      | Create a new fundraisers     | POST    | JSON PayLoad | 200                   | Any logged in user           |
 
 JSON example for create new fundraisers
 `{
