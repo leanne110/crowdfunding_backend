@@ -131,6 +131,7 @@ JSON example for obtain token with user details
 | /fundraisers/{id} | Fetch individual fundraiser  | GET     | N/A          | 200                   | None                         |
 | /fundraisers/{id} | Update individual fundraiser | PUT     | N/A          | 200                   | None                         |
 | /fundraisers      | Create a new fundraisers     | POST    | JSON PayLoad | 200                   | Any logged in user           |
+| /fundraisers/{id} | Delete individual fundraiser | DELETE  | N/A          | 200                   | None                         |
 
 JSON example for create new fundraisers
 `{
